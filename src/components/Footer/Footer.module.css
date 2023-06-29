@@ -1,0 +1,138 @@
+/* .container2{
+margin-top: 50px;
+background-color:rgb(140, 105, 200);
+ padding-top: 40px;
+width:fit-content;
+
+}
+
+
+.zagolovok{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+  
+    line-height: 0px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #43FFD2;
+    margin-top: 10px;
+}
+
+.text1223{
+    font-family: 'Oswald';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+}
+
+.row{
+    margin-left: 165px;
+    margin-right: 165px;
+  margin-top: 1120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    text-align: left;
+    list-style-type:none;
+    font-family: 'Oswald';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 18px;
+
+float: left;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+}
+.ss{
+    text-align: left;
+    font-family: 'Oswald';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 18px;
+
+float: inline-start;
+
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+text-decoration: none;
+}
+.text2{
+    font-family: 'Oswald';
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 15px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.da{
+    line-height: 0px;
+    margin-top: 20px;
+    
+}
+.ic3{
+margin-top: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footercolumn1{
+    margin-left: 40px;
+}
+.zagolovok5{
+    margin-left: 39px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+   
+    line-height: 0px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #43FFD2;
+   line-height: 0px;
+   margin-top: 10px;
+   padding-right: 60px;
+}
+
+.blin{
+    margin-top: 5px;
+    line-height: 18px;
+}
+.footercolumn3{
+    margin-top: 0px;
+}
+
+  .ic3{
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+ .row{
+    margin-top: 4px;
+ } */
