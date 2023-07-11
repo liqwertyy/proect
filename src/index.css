@@ -9,9 +9,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover; 
   background-color: #000000;
+  background-position: center;
+
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@media (max-width: 650px){
+body{
+  background-image: url("bg3201.png") ; 
+ 
+}
 }

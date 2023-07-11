@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState, useEffect} from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import styles from "./Main.module.css";
+import poisk from '../Header/img/poisk1.png'
 import myImage from "./img/Vector (4).svg";
 import myImage3 from "./img/Vector (2).svg";
 import myImage2 from "./img/Vector (3).svg";
@@ -8,10 +10,105 @@ import cartinka1 from "./img/Comp 10.png";
 import cartinka2 from "./img/Comp 11.png";
 import cartinka3 from "./img/Comp 12.png";
 import logo from "./img/Group33721.svg";
+import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 
 const Main = () => {
+  const [nav, setNav] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  const mobbt1 = {
+    background: scrollPosition > 330 ? 'black' : 'transparent'
+    // остальные стили вашего хедера...
+  };
+
   return (
-    <>
+    
+    <> <header >
+      
+    <div className={styles.container4}>
+
+     <div  className={
+              nav ? [styles.menu, styles.active].join(' ') : [styles.menu]
+            }>
+
+
+          
+   
+      <div className={styles.headerline}> 
+      <img className={styles.logo4} src={logo} alt="My Image"/>
+
+      <div className={styles.poisk2}>
+            {/* <img src={poisk} alt="123" /> */}
+            <input type="text" placeholder='ПОИСК' />
+         </div>
+       
+        <div className={styles.nav}>  
+         <div><a className={styles.navitem} href="#"> КАТАЛОГ </a> </div>
+         <div><a className={styles.navitem} href="#"> ДОСТАВКА И ОПЛАТА </a>  </div>
+         <div><a className={styles.navitem} href="#">О НАС</a> </div>
+         <div><a className={styles.navitem} href="#">КОНТАКТЫ</a></div>
+         </div>
+         
+    
+       </div>
+       <div>
+        <span className={styles.liniya}></span>
+       </div>
+       <div className={styles.sprava}>
+
+          <div className={styles.sprava1}>
+              <h3>zakaz@loverflower.by</h3>
+              <span>Доставка 24/7 по договоренности <br /> с оператором</span>
+         </div>
+         <div className={styles.sprava2}>
+              <h3>ул. Тимирязева 67</h3>
+              <span>10:00 до 21:00
+              без выходных</span>
+
+           </div>
+      </div>
+      <div className={styles.politika}>
+        Политика конфиденциальности <br />
+        Обработка персональных данных
+      </div>
+      <div className={styles.nomer111}>+375 (29) 113-69-69</div>
+      <div className={styles.iconics9}>
+            <a href="#">
+              <img src={myImage3} alt="21" className={styles.ic9} />
+            </a>
+            <a href="#">
+              <img src={myImage} alt="12" className={styles.ic9} />
+            </a>
+            <a href="#">
+              <img src={myImage2} alt="231" className={styles.ic} />
+            </a>
+          </div>
+  </div>     
+       
+      
+
+  
+</div>
+<div style={mobbt1} onClick={() => setNav(!nav)} className={styles.mobbt}>
+            {nav ? <AiOutlineClose size={35} /> : <AiOutlineMenu size={35} /> }
+          </div>
+ </header>
+
+
+
+
+
+
       <div className={styles.container}>
         <div className={styles.prikol}>
           <div className={styles.zagolovok1}>
