@@ -10,10 +10,13 @@ import cartinka1 from "./img/Comp 10.png";
 import cartinka2 from "./img/Comp 11.png";
 import cartinka3 from "./img/Comp 12.png";
 import logo from "./img/Group33721.svg";
+import paket from "./img/paket.svg";
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 
 const Main = () => {
+  
   const [nav, setNav] = useState(false);
+
   const [scrollPosition, setScrollPosition] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
@@ -26,15 +29,25 @@ const Main = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  const mobbt1 = {
+  const nav1 = {
     background: scrollPosition > 330 ? 'black' : 'transparent'
     // остальные стили вашего хедера...
   };
-
+const [counter, setcounter] = useState(0);
   return (
     
     <> <header >
-      
+      <div style={nav1} className={styles.nav1}>
+         <div onClick={() => setNav(!nav)} className={styles.mobbt}>
+            {nav ? <AiOutlineClose size={35} /> : <AiOutlineMenu size={35}  /> }
+          </div>
+          <div>
+            <div className={styles.kruzhochek}><p>{counter}</p></div>
+            <img  className={styles.paket} src={paket} alt="" />
+            
+          </div>
+      </div>
+     
     <div className={styles.container4}>
 
      <div  className={
@@ -54,7 +67,7 @@ const Main = () => {
        
         <div className={styles.nav}>  
          <div><a className={styles.navitem} href="#"> КАТАЛОГ </a> </div>
-         <div><a className={styles.navitem} href="#"> ДОСТАВКА И ОПЛАТА </a>  </div>
+         <div><a className={styles.navitem} href="#"> ДОСТАВКА И ОПЛАТА </a> </div>
          <div><a className={styles.navitem} href="#">О НАС</a> </div>
          <div><a className={styles.navitem} href="#">КОНТАКТЫ</a></div>
          </div>
@@ -99,9 +112,7 @@ const Main = () => {
 
   
 </div>
-<div style={mobbt1} onClick={() => setNav(!nav)} className={styles.mobbt}>
-            {nav ? <AiOutlineClose size={35} /> : <AiOutlineMenu size={35} /> }
-          </div>
+
  </header>
 
 
@@ -211,7 +222,7 @@ const Main = () => {
             </div>
             <div className={styles.denbl}>лучший день</div>
             <div className={styles.money}>167.00 ₽</div>
-            <button className={styles.but2}>в корзину</button>
+            <button onClick={()=>setcounter(counter+1)} className={styles.but2}>в корзину</button>
           </div>
 
           <div className={styles.cart1}>
@@ -220,13 +231,13 @@ const Main = () => {
             </div> 
             <div className={styles.denbl}>лучший день</div>
             <div className={styles.money}>167.00 ₽</div>
-            <button className={styles.but2}>в корзину</button>
+            <button onClick={()=>setcounter(counter+1)} className={styles.but2}>в корзину</button>
           </div>
           <div className={styles.cart1}>
            <img className={styles.cartinka0} src={cartinka3} alt="212" />
             <div className={styles.denbl}>лучший день</div>
             <div className={styles.money}>167.00 ₽</div>
-            <button className={styles.but2}>в корзину</button>
+            <button onClick={()=>setcounter(counter+1)}  className={styles.but2}>в корзину</button>
           </div>
         </div>
 
