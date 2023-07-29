@@ -1,285 +1,4 @@
-.container4{
-    max-width: 1110px;
-    margin: 0px auto;  
-    
-    padding: 0 40px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;    
 
-}
-.politika{
-    display: none;
-}
-.menu{
-    display: flex;
-}
-.mobbt{
-    display: none;
-}
-.headerline{
-
- display: flex; 
- align-items:baseline;   
-justify-content: space-between;
-padding-top: 20px;
-}
-
-h3{
-    font-family: 'Oswald';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 0px;
-/* identical to box height */
-
-letter-spacing: 0.1em;
-text-transform: uppercase;
-
-color: #43FFD2;
-}
-span{
-    font-family: 'Oswald';
-font-style: normal;
-font-weight: 300;
-font-size: 10px;
-line-height: 0px;
-/* identical to box height */
-
-letter-spacing: 0.1em;
-text-transform: uppercase;
-
-color: #FFFFFF;
-}
-.nav{
-    display: flex;
-    justify-content: space-between;
-}
-.navitem{
-    text-decoration: none;
-    font-family: 'Oswald';
-font-style: normal;
-font-weight: 400;
- font-size: 14px; 
-line-height: 21px;
-/* identical to box height */
-margin-right: 20px;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-text-decoration: none;
-color: #FFFFFF;
-justify-content: space-between;
-
-}
-a:hover{
-    color: #43FFD2;
-}
-.sprava {
-     margin-left: 0px; 
-   align-self: flex-end; 
-    text-align: right;
-}
-.nomer111{
-    display: none;
-}
-.iconics9{
-    display: none;
-}
-.sprava1 {
-    margin-bottom: 10px;
-}
-.logo4{
-   height: 80px;
-   margin-right:50px; 
-}
-.poisk2{
-     margin-right: 93px  
-}
-.sprava2{
-    margin-top: 36px;
-}
-.paket{
-    display: none;
-}
-input {
-    /* Делает само поле ввода прозрачным */
-    background: transparent;
-    /* Убираем рамки вокруг поля ввода */
-    border: none;
-    /* Добавим нижнюю черту для красоты */
-    border-bottom: 1px solid #444;
-  }
-  .liniya{
-    display: none;
-  }
-  @media (max-width: 1120px){
-.container{
-    max-width: 650px;
-    margin: 0 auto;
-   
-}
-.paket{
-   
-    
-    margin-top: 10px;
-    width:31px;
-    display: block;
-    margin-left: 80%;
-    
-   
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.20);
-    backdrop-filter: blur(10px);
-     padding: 12px 13px 13px 15px;
-}
- .sprava{
-    display: none;
-}
-  }
-  @media (max-width: 650px)
-{ 
-    .iconics9{
-    padding-top: 10px;
-    display: flex;
-   
-
-}
-.ic9{
-    margin-right: 20px;
-}
-.kruzhochek{
-    position: absolute;
-    border-radius: 50%;
-    width: 17px;
-    height: 17px;
-    background-color: #43FFD2;
-    display: flex; /* Добавляем flex-контейнер */
-    align-items: center; /* Выравнивание по вертикали */
-    justify-content: center;
-    margin-left: 88%;
-    margin-top: 1.4%;
-    z-index: 1200;
-   
-}
-.kruzhochek p{
-    color: #142B2B;
-font-family: Oswald;
-font-size: 10px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.32px;
-text-transform: uppercase;
-    text-align: center;
-}
-.nomer111{
-    display: block;
-    color: #FFF;
-    padding-top: 10px;
-font-family: Oswald;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 1.4px;
-text-decoration-line: underline;
-text-transform: uppercase;
-}
- 
- .nav{
-    white-space: nowrap;
- }
- .nav1{
-    display: inline;
-    justify-content: space-around;
-    position: fixed;
-    width: 100%;
-    height: 65px;
-    background-color:#000000;  
-    z-index: 10;
-    transition: background-color 0.5s;
-
- }
-.logo4{
- width: 45px;
- height: 80px;
- padding-top: 60px;
- 
-}
-.sprava h3, span{
-    font-size: 90%;
-}
-.politika{
-    display: block;
-    padding-top: 10px;
-color: #555;
-font-family: Oswald;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.4px;
-
-}  
-  .mobbt{
-        position: fixed;
-       margin-top: 12px;
-        display: block;
-        color:  #43FFD2;
-        padding-top: 6px;
-        padding-left: 6px;
-        padding-right: 10px;
-        padding-bottom: 15px;
-        cursor: pointer;
-        z-index: 1110;    
-        /* background-color:#000000 ; */
-        transition: background-color 0.5s;
-    }
-    .liniya{
-        display: block;
-        width: 100px;
-        height: 2px;
-        background-color: #fff;
-    }
-   
-    .menu{
-        z-index: 1;
-        height: 100vh;
-        background-color: #000000;
-        position: fixed;
-        display: flex;
-        left: -100%;
-        /* width: 100%; */
-        flex-direction: column;
-        padding-left: 14px;
-        padding-bottom: 10px;
-        justify-content: space-around;
-        transition: left 1s;
-    }
-    .active{
-        left: 0;
-    }
-    .nav{
-        flex-direction: column;
-    }
-    .headerline{
-        display: flex;
-        flex-direction: column;
-       
-        line-height: 50px;
-        padding-top: 0;
-    }
-    .navitem{
-        margin-right: 0;
-    }
-    .sprava{
-        display: block;
-        text-align: left;
-        align-self: auto;
-    }
-   
-
-  }
     
    
  
@@ -289,6 +8,32 @@ letter-spacing: 0.4px;
     margin-top: 60px;
     max-width: 1110px;
    
+}
+.zag1{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-size:30px ; 
+    line-height: 29px;
+    margin-top: 0%;
+
+   
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding-top: 0px;
+    text-align: center;
+    /* line-height: 153px; */
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    
+
+    z-index: 2000;
+    flex-wrap : wrap;
+    transition: opacity 0.3s;
 }
 .zagolovok1{
     font-family: 'Cormorant';
@@ -1146,7 +891,7 @@ background: #f66d52; /* Цвет фона */
 
 .but2{
 margin-bottom: 40px;
-/* font-size: 250%; */
+font-size: 5vw;
 /* width: 600px; */
  height: 90px;
     }
