@@ -42,9 +42,10 @@ const Main = () => {
 const [counter, setcounter] = useState(0);
   return (
     
-    <> <Header/>
+    <> 
 
-    
+    <div className={styles.wrapper}>
+
       <div className={styles.container}>
         <div className={styles.prikol}>
           <div className={styles.zagolovok1}>
@@ -407,7 +408,9 @@ const [counter, setcounter] = useState(0);
           </div>
         </div>
       </div>
+      </div>
     </>
+    
   );
 };
 

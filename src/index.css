@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("https://i.imgur.com/IMHyaIC.jpg") ; 
+  /* background-image: url("https://i.imgur.com/IMHyaIC.jpg") ;  */
   background-repeat: no-repeat;
   background-size: cover; 
   background-color: #000000;
@@ -18,9 +18,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-@media (max-width: 650px){
+/* @media (max-width: 650px){
 body{
   background-image: url("bg3201.png") ; 
  
 }
-}
+} */

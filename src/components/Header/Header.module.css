@@ -18,11 +18,11 @@
     display: none;
 }
 .headerline{
-
+align-items: center;
  display: flex; 
- align-items:baseline;   
+ align-items:flex-start;   
 justify-content: space-between;
-padding-top: 20px;
+padding-top: 0px;
 }
 
 h3{
@@ -75,9 +75,11 @@ a:hover{
     color: #43FFD2;
 }
 .sprava {
-     margin-left: 0px; 
-   align-self: flex-end; 
+    margin-left: 0px; 
+    align-self: flex-end; 
     text-align: right;
+    display: flex;
+    flex-direction: column;
 }
 .nomer111{
     display: none;
@@ -89,6 +91,7 @@ a:hover{
     margin-bottom: 10px;
 }
 .logo4{
+    display: flex;
    height: 80px;
    margin-right:50px; 
 }
@@ -96,7 +99,7 @@ a:hover{
      margin-right: 93px  
 }
 .sprava2{
-    margin-top: 36px;
+    margin-top: 0px;
 }
 .paket{
     display: none;
@@ -142,6 +145,32 @@ input {
     display: flex;
    
 
+}
+.zag1{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-size:30px ; 
+    line-height: 29px;
+    margin-top: 0%;
+   
+   display: flex;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding-top: 0px;
+    text-align: center;
+    /* line-height: 153px; */
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    margin-left: 6%;
+
+    z-index: 2000;
+    flex-wrap : wrap;
+    transition: opacity 0.3s;
 }
 .ic9{
     margin-right: 20px;
@@ -193,7 +222,7 @@ text-transform: uppercase;
     display: flex;
     position: fixed;
     width: 100%;
-    height: 95px;
+    height: 75px;
     background-color: #000000;
     z-index: 10;
     transition: background-color 0.3s;
@@ -286,7 +315,7 @@ letter-spacing: 0.4px;
     .headerline{
         display: flex;
         flex-direction: column;
-       
+       align-items: flex-start;
         line-height: 50px;
         padding-top: 0;
     }
@@ -302,29 +331,3 @@ letter-spacing: 0.4px;
 
   }
 
-.zag1{
-    text-align: center;
-    justify-content: center;
-    font-family: 'Cormorant';
-    font-style: normal;
-    font-size:30px ; 
-    line-height: 29px;
-    margin-top: 0%;
-
-   
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    padding-top: 0px;
-    text-align: center;
-    /* line-height: 153px; */
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- 
-    margin-left: 10%;
-
-    z-index: 2000;
-    flex-wrap : wrap;
-    transition: opacity 0.3s;
-}

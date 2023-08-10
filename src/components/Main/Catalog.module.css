@@ -1,0 +1,368 @@
+.wrapper{
+background-color: rgb(33, 53, 48);
+margin-top: 20px;
+}
+.el1{
+    position: absolute;
+    top: 0;
+    width: 59vw;
+    height: 39vw;
+    right: -320px;
+    top: 0;
+    max-width: 100%;
+}
+.el2{
+    position: absolute;
+    width: 59vw;
+    height: 45vw;
+    left: -250px;
+    top: 210px;
+    max-width: 100%;
+    flex-shrink: 0;
+    
+}
+.el3{
+    position: absolute;
+    top: 2220px;
+    width: 40vw;
+    height: 40vw;
+    right: -90px;
+    top: 220px;
+    max-width: 100%;
+    
+}
+.cv1{
+    position: absolute;
+    top: 0;
+    width: 59vw;
+    height: 39vw;
+    left: -100px;
+    top: 0;
+    max-width: 100%;
+}
+.cv2{
+    position: absolute;
+    top: 0;
+    width: 59vw;
+    height: 42vw;
+    right: -290px;
+    top: 55px;
+  
+}
+.container{
+    flex-direction: column;
+        margin-left: 16vw;
+        margin-right: 16vw;
+        display: flex;
+        justify-content: center;
+        
+justify-content: space-between;
+      
+      
+}
+.xaxa{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.iconics{
+ align-items: center;
+
+width: 4vw;
+height: 195px;
+
+margin-top: 50px;
+ display:grid;
+ background: rgba(0, 0, 0, 0.2);
+ backdrop-filter: blur(10px);
+ /* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+justify-items: center;   
+}
+.ic{
+    width: 35px;
+}
+
+.cat1{
+    font-family: Cormorant;
+    color: #FFF;
+
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 1.4px;
+text-transform: uppercase;
+font-size: 140px;
+font-style: normal;
+font-weight: 400;
+line-height: 120px;
+letter-spacing: 2px;
+text-transform: uppercase;
+z-index: 2;
+}
+.buk1{
+    font-family: Cormorant;
+    color: #FFF;
+
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 1.4px;
+text-transform: uppercase;
+font-size: 140px;
+font-style: normal;
+font-weight: 400;
+line-height: 120px;
+letter-spacing: 2px;
+text-transform: uppercase;
+z-index: 2;
+padding-left: 200px;
+}
+.text{
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+    border-radius: 20px;
+background: rgba(0, 0, 0, 0.30);
+backdrop-filter: blur(10px);
+padding: 20px  20px;
+font-family: Cormorant;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.textik{
+    margin-top: 30px;
+    color: #FFF;
+font-family: Oswald;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.56px;
+text-transform: uppercase;
+padding-right: 50px;
+
+}
+.sprava{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    z-index: 131;
+}
+.nomer{
+color: #FFF;
+font-family: Oswald;
+font-size: 19px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 1.4px;
+text-transform: uppercase;
+z-index: 10;
+padding-top: 80px;
+padding-bottom: 20px;
+
+}
+.zvonok{
+    font-family: 'Oswald';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 35px;
+   /* identical to box height */
+   text-align: right;
+   letter-spacing: 0.1em;
+   color: #43FFD2;
+   
+   border-radius: 10px;
+   display: flex;
+   text-transform: uppercase;
+   background: rgba(0, 0, 0, 0.2);
+   backdrop-filter: blur(10px);
+   /* Note: backdrop-filter has minimal browser support */
+   align-items: center;
+   border-radius: 10px;
+   justify-content: space-around;
+   border: none;
+   }
+   .zv{
+    padding: 10px 10px;
+   }
+   .btns{
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(3, 1fr);
+
+    margin-top: 20px;
+    flex-wrap: wrap;
+   }
+   .btns button{
+   margin: 6px 6px;
+    border-radius: 40px;
+border: 0.5px solid #FFF;
+color: #FFF;
+font-family: Oswald;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+
+text-transform: uppercase;
+padding: 11px 16px;
+
+background-image: none; 
+background: transparent;
+
+background-color: transparent;
+   }
+   .tovar{
+    gap: 30px;
+    display: flex;
+    margin-top: 80px;
+   }
+.sorter{
+  height: fit-content;
+    display: inline-block;
+    border-radius: 20px;
+background: rgba(0, 0, 0, 0.30);
+backdrop-filter: blur(10px);
+padding: 20px 20px 0px 16px;
+}
+.sorter ul{
+    display: flex;
+    flex-direction: column;
+
+   padding:0px 0px 0px 0px;
+    
+}
+.pocvetu{
+    display: flex;
+    flex-direction: column;
+}
+.pocvetu h2{
+    margin: 0 0;
+    color: #43FFD2;
+font-family: Oswald;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.56px;
+text-transform: uppercase;
+}
+.but2{
+
+}
+label{
+    color: #FFF;
+font-family: Oswald;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.48px;
+text-transform: uppercase;
+}
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid white;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: white;
+  }
+  .sorter li{
+    display: flex   ;
+    align-items: center;
+    
+  }
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  #price-value {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+.scroll{
+    padding: 20px 20px 20px 20px;
+    height: 150px;
+    overflow-y: scroll; 
+}
+.cards{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        
+}
+.card{
+    display: flex;
+    }
+.card img{
+    width: 255px;
+height: 335px;
+flex-shrink: 0;
+}
+.cena{
+    text-decoration: none;
+    color: #FFF;
+font-family: Oswald;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.56px;
+text-transform: uppercase;
+}
+.title1{
+    
+    color: #FFF;
+font-family: Oswald;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.8px;
+text-transform: uppercase;
+}
+.card button{
+    background: transparent;
+    box-sizing: border-box;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+height: 70px;
+padding: 0 20px;
+width: 100%;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+margin-top: 20px;
+color: #FFFFFF;
+white-space: nowrap;
+border: 0.5px solid #FFFFFF;
+}
+.card button:hover{
+    color: #fff; /* Цвет текста */
+background: #f66d52; /* Цвет фона */
+}

@@ -9,6 +9,7 @@ import myImage3 from "../Main/img/Vector (2).svg"
 import myImage from "../Main/img/Vector (4).svg";
 import paket from "../Main/img/paket.svg";
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
+
 const Header = () => {
     const [nav, setNav] = useState(false);
     const [korz, setKorz]= useState(false);
@@ -67,23 +68,17 @@ const Header = () => {
    <input type="text" placeholder='ПОИСК' />
 </div>
 <div className={styles.nav}>  
-<div><a className={styles.navitem} href="#"> КАТАЛОГ </a> </div>
-<div><a className={styles.navitem} href="#"> ДОСТАВКА И ОПЛАТА </a> </div>
+<div><a className={styles.navitem} href="/catalog"> КАТАЛОГ </a> </div>
+<div><a className={styles.navitem} href="/asdas"> ДОСТАВКА И ОПЛАТА </a> </div>
 <div><a className={styles.navitem} href="#">О НАС</a> </div>
 <div><a className={styles.navitem} href="#">КОНТАКТЫ</a></div>
-</div>
-
-
-</div>
-<div>
-<span className={styles.liniya}></span>
-</div>
 <div className={styles.sprava}>
 
  <div className={styles.sprava1}>
      <h3>zakaz@loverflower.by</h3>
      <span>Доставка 24/7 по договоренности <br /> с оператором</span>
 </div>
+<br />
 <div className={styles.sprava2}>
      <h3>ул. Тимирязева 67</h3>
      <span>10:00 до 21:00
@@ -91,6 +86,16 @@ const Header = () => {
 
   </div>
 </div>
+</div>
+
+
+</div>
+
+
+<div>
+<span className={styles.liniya}></span>
+</div>
+
 <div className={styles.politika}>
 Политика конфиденциальности <br />
 Обработка персональных данных

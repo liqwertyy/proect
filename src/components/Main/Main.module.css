@@ -1,11 +1,13 @@
 
+
+   .wrapper{
+    background: #040A0A;
+   }    
     
-   
- 
-  
+
 .container{
-    margin: 0px auto;  
-    margin-top: 60px;
+   margin: auto auto;
+    width: auto;
     max-width: 1110px;
    
 }
@@ -36,11 +38,12 @@
     transition: opacity 0.3s;
 }
 .zagolovok1{
+ 
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 300;
-    font-size: 180px; 
-   line-height: 242px; 
+    font-size: 10vw; 
+   /* line-height: 242px;  */
     letter-spacing: 0.2em;
     text-transform: uppercase;
     padding-top: 0px;
@@ -51,7 +54,7 @@
     align-items: center;
     justify-content: center;
  
-    margin-left: auto;
+ 
    
     flex-wrap : wrap;
 }
@@ -101,7 +104,8 @@ justify-content: center;
 }
 .prikol{
 display: flex;
-justify-content: space-between;
+
+justify-content: flex-end;
 }
 
 .iconics{
@@ -731,7 +735,7 @@ background: #f66d52; /* Цвет фона */
     .container{
         margin: 0px auto;  
         margin-top: 60px;
-        max-width: auto;    
+       width: auto;   
        
     }
 
@@ -829,6 +833,7 @@ background: #f66d52; /* Цвет фона */
 }
 
     .zagolovok1{
+        padding-right:0;
     font-size:50px ; 
     line-height: 59px;
     margin-top: 34px;
