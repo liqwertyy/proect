@@ -10,14 +10,29 @@ import myImage from "./img/Vector (4).svg";
 import myImage3 from "./img/Vector (2).svg";
 import myImage2 from "./img/Vector (3).svg";
 import myImage43 from "./img/Vector(5).svg";
-import cardimg1 from './catalogimg/card1.svg'
+
 import Card from "./Card";
 
 const arr =[
 {
   title:' Лучший день',
-  price:"169.00"
- 
+  price:"169.00",
+  imageurl:require('./catalogimg/card1.png'),
+},
+{
+  title:'найсовый день',
+  price:"339.00",
+  imageurl:require('./catalogimg/card2.png'),
+},
+{
+  title:'беспантовый день',
+  price:"129.00",
+  imageurl:require('./catalogimg/card3.png'),
+},
+{
+  title:'я убью себя',
+  price:"121369.00",
+   imageurl:require('./catalogimg/card4.png'),
 },
 
 
@@ -26,11 +41,11 @@ const Catalog = () => {
   return (
     <>
       <div className={styles.wrapper}>
-        {/* <img src={el2} className={styles.el2} alt="323" />
+        <img src={el2} className={styles.el2} alt="323" />
         <img src={el} className={styles.el1} alt="323" />
         <img src={el3} className={styles.el3} alt="323" />
         <img src={cvetok1} className={styles.cv1} alt="32" />
-        <img src={cvetok2} className={styles.cv2} alt="32" /> */}
+        <img src={cvetok2} className={styles.cv2} alt="32" />
 
         <div className={styles.container}>
           <div className={styles.xaxa}>
@@ -203,14 +218,14 @@ const Catalog = () => {
                   <input type="checkbox" /><label >анстранция</label>
                   </li>
                 </ul>
-              </div>  
+              </div>
             </div>
 
             <div className={styles.cards}>
               {arr.map((obj) =>(<Card
                title={obj.title} 
                price={obj.price} 
-        
+              imageurl={obj.imageurl} 
                />   )
               
               )}
