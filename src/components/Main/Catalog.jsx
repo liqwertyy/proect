@@ -11,16 +11,26 @@ import myImage3 from "./img/Vector (2).svg";
 import myImage2 from "./img/Vector (3).svg";
 import myImage43 from "./img/Vector(5).svg";
 import cardimg1 from './catalogimg/card1.svg'
+import Card from "./Card";
 
+const arr =[
+{
+  title:' Лучший день',
+  price:"169.00"
+ 
+},
+
+
+];  
 const Catalog = () => {
   return (
     <>
       <div className={styles.wrapper}>
-        <img src={el2} className={styles.el2} alt="323" />
+        {/* <img src={el2} className={styles.el2} alt="323" />
         <img src={el} className={styles.el1} alt="323" />
         <img src={el3} className={styles.el3} alt="323" />
         <img src={cvetok1} className={styles.cv1} alt="32" />
-        <img src={cvetok2} className={styles.cv2} alt="32" />
+        <img src={cvetok2} className={styles.cv2} alt="32" /> */}
 
         <div className={styles.container}>
           <div className={styles.xaxa}>
@@ -193,69 +203,18 @@ const Catalog = () => {
                   <input type="checkbox" /><label >анстранция</label>
                   </li>
                 </ul>
-              </div>
+              </div>  
             </div>
 
             <div className={styles.cards}>
-              <div className={styles.card}>
-              <div >
-                <img src={cardimg1} alt="21" />
-                <div className={styles.title1}>
-                лучший день
-                </div>
-                <div className={styles.cena}>
-                167.00 ₽
-                </div>
-                <button className={styles.but2}>в корзину</button>
-              </div>
-
-
-              </div>
-              <div className={styles.card}>
-              <div >
-                <img src={cardimg1} alt="21" />
-                <div className={styles.title1}>
-                лучший день
-                </div>
-                <div className={styles.cena}>
-                167.00 ₽
-                </div>
-                <button className={styles.but2}>в корзину</button>
-              </div>
-
-
-              </div>
-              <div className={styles.card}>
-              <div >
-                <img src={cardimg1} alt="21" />
-                <div className={styles.title1}>
-                лучший день
-                </div>
-                <div className={styles.cena}>
-                167.00 ₽
-                </div>
-                <button className={styles.but2}>в корзину</button>
-              </div>
-
-
-              </div>
-              <div className={styles.card}>
-              <div >
-                <img src={cardimg1} alt="21" />
-                <div className={styles.title1}>
-                лучший день
-                </div>
-                <div className={styles.cena}>
-                167.00 ₽
-                </div>
-                <button className={styles.but2}>в корзину</button>
-              </div>
-
-
-              </div>
+              {arr.map((obj) =>(<Card
+               title={obj.title} 
+               price={obj.price} 
+        
+               />   )
               
-
-
+              )}
+                       
             </div>
           </div>
         </div>

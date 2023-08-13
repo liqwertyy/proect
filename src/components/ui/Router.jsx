@@ -5,7 +5,7 @@ export const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Main/>} /> 
+        <Route path='' element={<Main/>} /> 
         <Route path='/catalog' element={<Catalog/>} /> 
         <Route path="*" element={<div>not found</div>} />
       </Routes>
